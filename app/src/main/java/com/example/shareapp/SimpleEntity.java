@@ -1,0 +1,11 @@
+package com.example.shareapp;
+
+public class SimpleEntity {
+    protected String name;
+
+    public SimpleEntity(String name) {
+        this.name = name;
+    }
+
+    // no-arg constructor, getters, and setters
+}

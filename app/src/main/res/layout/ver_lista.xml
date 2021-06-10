@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#98BAAE"
+    android:orientation="horizontal"
+    tools:context="com.example.shareapp.VerLista">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="388dp"
+        android:layout_height="369dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="146dp"
+        android:layout_height="135dp"
+        app:srcCompat="@drawable/d5d7afad9f9b43b6b7398c71fe255123"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="7dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
