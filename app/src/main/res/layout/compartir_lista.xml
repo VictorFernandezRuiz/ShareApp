@@ -10,36 +10,36 @@
     tools:context="com.example.shareapp.VerLista">
 
     <Button
-        android:id="@+id/buttonSaldo"
-        android:layout_width="151dp"
-        android:layout_height="61dp"
+        android:id="@+id/buttonAtras"
+        android:layout_width="87dp"
+        android:layout_height="41dp"
 
-        android:layout_marginBottom="64dp"
-        android:text="Compartir Lista"
-        app:backgroundTint="#2C6323"
+        android:layout_marginBottom="636dp"
+        android:text="Atrás"
+        app:backgroundTint="#354A31"
 
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="@id/buttonRegister"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <Button
-        android:id="@+id/buttonDeleteProduct"
-        android:layout_width="160dp"
-        android:layout_height="66dp"
+        android:id="@+id/buttonSaldo"
+        android:layout_width="151dp"
+        android:layout_height="61dp"
 
-        android:layout_marginBottom="172dp"
-        android:text="Borrar Producto"
-        app:backgroundTint="#1C4315"
+        android:layout_marginBottom="348dp"
+        android:text="Compartir Lista"
+        app:backgroundTint="#2C6323"
 
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="@id/buttonRegister"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,29 +49,11 @@
         android:id="@+id/txtShareUser"
         android:layout_width="357dp"
         android:layout_height="50dp"
-        android:hint="Product"
+        android:hint="Usuario"
         android:inputType="text"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="428dp" />
-
-    <Button
-        android:id="@+id/buttonInsertProduct"
-        android:layout_width="159dp"
-        android:layout_height="68dp"
-
-        android:layout_marginBottom="172dp"
-        android:text="Insertar Producto"
-        app:backgroundTint="#2C6323"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="@id/buttonRegister"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="254dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -81,12 +63,6 @@
         tools:layout_editor_absoluteX="14dp"
         tools:layout_editor_absoluteY="679dp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="374dp"
-        android:layout_height="261dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="142dp" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="146dp"
@@ -94,4 +70,12 @@
         app:srcCompat="@drawable/d5d7afad9f9b43b6b7398c71fe255123"
         tools:layout_editor_absoluteX="132dp"
         tools:layout_editor_absoluteY="7dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="301dp"
+        android:layout_height="51dp"
+        android:text="Introduce a continuación el nombre de usuario con quien quieres compartir tu lista:"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="183dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
