@@ -14,10 +14,16 @@ import java.io.IOException
 class VerLista : AppCompatActivity() {
 
 
-
+    private lateinit var  buttonInsertProduct: Button
+    private lateinit var buttonDeleteProduct: Button
+    private lateinit var buttonShare: Button
+    private var inputUser: EditText? = null
+    private var inputPassword: EditText? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.ver_lista)
+
 
 
         setOnClickListeners(this)

@@ -10,7 +10,7 @@
     tools:context="com.example.shareapp.VerLista">
 
     <Button
-        android:id="@+id/buttonSaldo"
+        android:id="@+id/buttonShare"
         android:layout_width="151dp"
         android:layout_height="61dp"
 
