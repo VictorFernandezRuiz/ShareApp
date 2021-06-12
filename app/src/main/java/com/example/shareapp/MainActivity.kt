@@ -36,13 +36,6 @@ class MainActivity : AppCompatActivity() {
     private fun setOnClickListeners(context: Context) {
         buttonLogin.setOnClickListener {
 
-          //  val loginEndpoint = URL("http://localhost:8080/apiz-0.0.1-SNAPSHOT/ExecuteLogin/victor/ilerna")
-          //  setOnClickListeners(this)
-          //  val myConnection: HttpURLConnection = loginEndpoint.openConnection() as HttpURLConnection
-          //  if (myConnection.getResponseCode() == 200) {
-          //      Toast.makeText(context, "Login'...", Toast.LENGTH_SHORT).show()
-          //  } else {
-          //      Toast.makeText(context, "ERROR'...", Toast.LENGTH_SHORT).show()
 
             val user = inputUser!!.text.toString()
 
@@ -60,8 +53,6 @@ class MainActivity : AppCompatActivity() {
             }
 
         buttonRegister.setOnClickListener {
-            val connection: HttpURLConnection? = null
-
 
             val user = inputUser!!.text.toString()
             val password = inputPassword!!.text.toString()

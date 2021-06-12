@@ -10,6 +10,24 @@
     tools:context="com.example.shareapp.VerLista">
 
     <Button
+        android:id="@+id/buttonSaldo"
+        android:layout_width="151dp"
+        android:layout_height="61dp"
+
+        android:layout_marginBottom="72dp"
+        android:text="Saldo"
+        app:backgroundTint="#2C6323"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/buttonRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <Button
         android:id="@+id/buttonShare"
         android:layout_width="151dp"
         android:layout_height="61dp"

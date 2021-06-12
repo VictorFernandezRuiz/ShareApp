@@ -18,6 +18,8 @@ class VerLista : AppCompatActivity() {
     private lateinit var buttonDeleteProduct: Button
     private lateinit var buttonShare: Button
     private var txtInsertProduct: EditText? = null
+    private lateinit var buttonSaldo: Button
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +28,7 @@ class VerLista : AppCompatActivity() {
         buttonInsertProduct = findViewById(R.id.buttonInsertProduct)
         buttonDeleteProduct = findViewById(R.id.buttonDeleteProduct)
         buttonShare = findViewById(R.id.buttonShare)
+        buttonSaldo = findViewById(R.id.buttonSaldo)
         txtInsertProduct = findViewById(R.id.txtInsertProduct)
 
 
@@ -71,12 +74,16 @@ class VerLista : AppCompatActivity() {
         buttonShare.setOnClickListener {
 
 
-
-
             val verCompartirLista = Intent(this, CompartirLista::class.java)
             startActivity(verCompartirLista)
         }
 
+        buttonSaldo.setOnClickListener {
+
+
+            val verSaldo = Intent(this, Saldo::class.java)
+            startActivity(verSaldo)
+        }
 
 
 

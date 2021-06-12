@@ -20,12 +20,9 @@ public class LoginMain extends AppCompatActivity implements View.OnClickListener
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        // call the super class onCreate to complete the creation of activity like
-        // the view hierarchy
+
         super.onCreate(savedInstanceState);
 
-        // set the user interface layout for this activity
-        // the layout file is defined in the project res/layout/main_activity.xml file
         setContentView(R.layout.activity_main);
 
         buttonLogin = findViewById(R.id.buttonLogin);

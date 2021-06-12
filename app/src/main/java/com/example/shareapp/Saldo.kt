@@ -10,12 +10,13 @@ import androidx.appcompat.app.AppCompatActivity
 import okhttp3.*
 import java.io.IOException
 
-class CompartirLista : AppCompatActivity() {
+class Saldo : AppCompatActivity() {
 
 
-    private lateinit var buttonShareList: Button
-    private var txtShareUser: EditText? = null
+    private var editSaldo: EditText? = null
+    private lateinit var buttonAddSaldo: Button
     private lateinit var buttonAtras: Button
+
 
     val user = intent.extras?.getString("name_user")
 
@@ -24,11 +25,9 @@ class CompartirLista : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ver_lista)
 
-        buttonShareList = findViewById(R.id.buttonAddSaldo)
-        txtShareUser = findViewById(R.id.txtShareUser)
         buttonAtras = findViewById(R.id.buttonAtras)
-
-
+        buttonAddSaldo = findViewById(R.id.buttonAddSaldo)
+        editSaldo = findViewById(R.id.editSaldo)
 
 
         setOnClickListeners(this)
@@ -36,21 +35,23 @@ class CompartirLista : AppCompatActivity() {
 
     private fun setOnClickListeners(context: Context) {
 
-        buttonShareList.setOnClickListener {
+        buttonAddSaldo.setOnClickListener {
 
 
-            val userShare = txtShareUser!!.text.toString()
+            val saldo = editSaldo!!.text.toString()
             val user = intent.extras?.getString("name_user")
 
 
-            val url = "http://10.0.2.2:8080/apiz-0.0.1-SNAPSHOT/ExecuteShareList/" + user + "/" + userShare
+            val url = "http://10.0.2.2:8080/apiz-0.0.1-SNAPSHOT/ExecuteInsertAmount/" + saldo + "/" + user
 
             val  myResponse = run(url)
 
-            Toast.makeText(context, "Se ha convertido la lista con" + userShare.toString(), Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, myResponse.toString(), Toast.LENGTH_SHORT).show()
 
-
+            val verLista = Intent(this, VerLista::class.java)
+            startActivity(verLista)
         }
+
         buttonAtras.setOnClickListener {
 
             val verLista = Intent(this, VerLista::class.java)
@@ -58,7 +59,6 @@ class CompartirLista : AppCompatActivity() {
             startActivity(verLista)
 
         }
-
     }
 
     val client = OkHttpClient()
@@ -80,5 +80,4 @@ class CompartirLista : AppCompatActivity() {
 
     }
 
-
-}
+    }
