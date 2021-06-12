@@ -64,6 +64,7 @@ class MainActivity : AppCompatActivity() {
 
 
             val verLista = Intent(this, VerLista::class.java)
+            verLista.putExtra("name_user", user)
             startActivity(verLista)
         }
 

@@ -17,18 +17,18 @@ class CompartirLista : AppCompatActivity() {
     private var txtShareUser: EditText? = null
     private lateinit var buttonAtras: Button
 
-    val user = intent.extras?.getString("name_user")
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.ver_lista)
+        setContentView(R.layout.compartir_lista)
 
         buttonShareList = findViewById(R.id.buttonAddSaldo)
         txtShareUser = findViewById(R.id.txtShareUser)
         buttonAtras = findViewById(R.id.buttonAtras)
 
-
+        val user = intent.getStringExtra("name_user")
 
 
         setOnClickListeners(this)
@@ -40,7 +40,7 @@ class CompartirLista : AppCompatActivity() {
 
 
             val userShare = txtShareUser!!.text.toString()
-            val user = intent.extras?.getString("name_user")
+            var user = intent.getStringExtra("name_user")
 
 
             val url = "http://10.0.2.2:8080/apiz-0.0.1-SNAPSHOT/ExecuteShareList/" + user + "/" + userShare
@@ -54,6 +54,7 @@ class CompartirLista : AppCompatActivity() {
         buttonAtras.setOnClickListener {
 
             val verLista = Intent(this, VerLista::class.java)
+            var user = intent.getStringExtra("name_user")
             verLista.putExtra("name_user", user)
             startActivity(verLista)
 

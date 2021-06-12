@@ -14,76 +14,84 @@
         android:layout_width="87dp"
         android:layout_height="41dp"
 
-        android:layout_marginBottom="636dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+
+        android:layout_marginTop="47dp"
         android:text="Atrás"
         app:backgroundTint="#354A31"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="@id/buttonRegister"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonAddSaldo"
         android:layout_width="151dp"
         android:layout_height="61dp"
 
-        android:layout_marginBottom="188dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+
+        android:layout_marginTop="33dp"
         android:text="Añadir saldo"
         app:backgroundTint="#2C6323"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="@id/buttonRegister"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editSaldo" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="377dp"
         android:layout_height="32dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="20dp"
         android:text="Víctor Fernández Ruiz para ILERNA ONLINE - Junio 2021"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="679dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="146dp"
         android:layout_height="135dp"
-        app:srcCompat="@drawable/d5d7afad9f9b43b6b7398c71fe255123"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="7dp" />
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginRight="133dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d5d7afad9f9b43b6b7398c71fe255123" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="301dp"
         android:layout_height="51dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="25dp"
         android:text="Saldo del usuario que creó la lista:"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="167dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/editSaldo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="148dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="427dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSALDO" />
 
     <TextView
         android:id="@+id/textSALDO"
         android:layout_width="161dp"
         android:layout_height="42dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="19dp"
         android:text="Saldo: "
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="237dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView5"

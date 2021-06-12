@@ -21,6 +21,11 @@ class VerLista : AppCompatActivity() {
     private lateinit var buttonSaldo: Button
 
 
+   // val user = intent.getStringExtra("name_user")
+
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +36,11 @@ class VerLista : AppCompatActivity() {
         buttonSaldo = findViewById(R.id.buttonSaldo)
         txtInsertProduct = findViewById(R.id.txtInsertProduct)
 
+      //  var bundle :Bundle ?=intent.extras
+       // var message = bundle!!.getString("name_user") // 1
+      //  var strUser: String? = intent.getStringExtra("name_user") // 2
+
+        val user = intent.getStringExtra("name_user")
 
         setOnClickListeners(this)
     }
@@ -51,6 +61,7 @@ class VerLista : AppCompatActivity() {
             Toast.makeText(context, myResponse.toString(), Toast.LENGTH_SHORT).show()
 
             val verLista = Intent(this, VerLista::class.java)
+            verLista.putExtra("name_user", user)
             startActivity(verLista)
         }
 
@@ -68,6 +79,7 @@ class VerLista : AppCompatActivity() {
             Toast.makeText(context, myResponse.toString(), Toast.LENGTH_SHORT).show()
 
             val verLista = Intent(this, VerLista::class.java)
+            verLista.putExtra("name_user", user)
             startActivity(verLista)
         }
 
