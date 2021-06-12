@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <Button
-        android:id="@+id/buttonSaldo"
+        android:id="@+id/buttonShareList"
         android:layout_width="151dp"
         android:layout_height="61dp"
 

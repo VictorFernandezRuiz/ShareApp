@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <EditText
-        android:id="@+id/txtShareUser"
+        android:id="@+id/txtInsertProduct"
         android:layout_width="357dp"
         android:layout_height="50dp"
         android:hint="Product"

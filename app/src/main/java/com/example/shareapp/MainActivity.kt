@@ -45,17 +45,17 @@ class MainActivity : AppCompatActivity() {
           //      Toast.makeText(context, "ERROR'...", Toast.LENGTH_SHORT).show()
 
             val user = inputUser!!.text.toString()
+
             val password = inputPassword!!.text.toString()
 
             val url = "http://10.0.2.2:8080/apiz-0.0.1-SNAPSHOT/ExecuteLogin/" + user + "/" + password
 
-
-            val client = OkHttpClient()
             val  myResponse = run(url)
 
             Toast.makeText(context, myResponse.toString(), Toast.LENGTH_SHORT).show()
 
             val verLista = Intent(this, VerLista::class.java)
+            verLista.putExtra("name_user", user)
             startActivity(verLista)
             }
 
